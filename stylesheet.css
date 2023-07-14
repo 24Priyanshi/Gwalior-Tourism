@@ -89,17 +89,23 @@ button{
 .container2{
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('page2.avif'); */
     background-color: black;
+    margin-top: 150px;
     width: 100%;
     height: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    
 }
 .card{
-    width: 400px;
+    width: 250px;
     
-    height: 400px;
-    display: inline-block;
+    height: 350px;
+    
+    
+    float: left;
     border-radius: 10px;
     padding: 15px 25px;
     box-sizing: border-box;
@@ -111,6 +117,8 @@ button{
     transition: transform 0.3s;
     margin: 50px;
     color: #fff;
+
+    
     
     
 }
@@ -125,9 +133,35 @@ color: #fff;
     background-image: url(jaivilas\ palace.jpg);
 }
 .three{
-    background-image: url(Sun\ temple.webp);
+    background-image: url(sun-temple3.jpg);
+    color: #ad5252;
 }
 .four{
     background-image: url(gopachal-parvat3.jpg);
     background-size: cover;
+}
+.five{
+    background-image:url(teli\ mandir.jpg)
+}
+.six{
+    background-image:url(moti\ mahal.jpg);
+    background-size: cover;
+}
+.seven{
+    background-image:url(Sun\ temple.webp)
+}
+.eight{
+    background-image:url(gujari-mahal.jpg);
+    color:brown;
+}
+#title{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: absolute;
+    left: 85vh;
+    top: 900px;
+    font-size: 40px;
 }
