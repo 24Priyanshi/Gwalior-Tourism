@@ -35,9 +35,8 @@ position: absolute;
     transform: translateY(180deg);
 } */
 .flip-card{
-  position: relative;
-  width: 250px;
-  height: 350px;
+
+ 
 
 }
 .flip-card-inner{
