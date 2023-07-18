@@ -121,14 +121,17 @@ button{
 
 .card:hover{
     transform: rotateY(180deg);
-    oh
+    
   
 
 }
-.one{
-    background-image: url(fort\ night.webp);
+.one,.two,.three,.four,.five,.six,.seven,.eight{
     transform-style:preserve-3d ;
     transition: all 0.8s ease;
+}
+.one{
+    background-image: url(fort\ night.webp);
+    
     
 }
 .front{
@@ -144,7 +147,8 @@ button{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    transform: rotateY('180deg');
+    transform: rotateY;
+   
 }
 .one h5{
 color: #fff;
