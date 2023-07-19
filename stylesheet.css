@@ -86,6 +86,19 @@ button{
 
 }
 /* page 2 */
+#title{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: absolute;
+    left: 85vh;
+    top: 900px;
+    font-size: 40px;
+    margin-top:-20vh;
+}
+
 .container2{
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('page2.avif'); */
     background-color: black;
@@ -177,15 +190,4 @@ color: #fff;
 .eight{
     background-image:url(gujari-mahal.jpg);
     color:brown;
-}
-#title{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    position: absolute;
-    left: 85vh;
-    top: 900px;
-    font-size: 40px;
 }
