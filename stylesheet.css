@@ -101,8 +101,15 @@ button{
 
 .container2{
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('page2.avif'); */
-    background-color: black;
+    /* background-image: url(background\ for\ page\ 2.avif); */
+    background-size: cover;
+    /* background-color:#e4d1b9; */
+    /* background: linear-gradient(90deg, hsla(23, 41%, 9%, 1) 0%, hsla(230, 54%, 31%, 1) 100%); */
+    /* background: linear-gradient(180deg, hsla(23, 41%, 9%, 1) 0%, hsla(230, 54%, 31%, 1) 59%); */
     /* margin-top: 150px; */
+    /* background: linear-gradient(180deg, hsla(23, 41%, 9%, 1) 0%, hsla(230, 54%, 31%, 1) 100%); */
+    background: linear-gradient(180deg, hsla(23, 41%, 9%, 1) 0%, hsla(230, 54%, 31%, 1) 100%);
+
     width: 100%;
     height: 100%;
     display: flex;
