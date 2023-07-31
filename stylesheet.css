@@ -32,13 +32,7 @@ nav ul li a{
     width: 100%;
     height: 50rem;
    
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('GWALIOR.jpg'); */
-    /* background: rgb(255,255,255);
-background-image: linear-gradient( rgba(255,255,255,0) 0%, rgba(15,14,13,0.6307773109243697) 69%),url(GWALIOR.jpg); */
-/* background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(15,14,13,1) 100%),url(background3.webp); */
-/* background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,0) 44%, rgba(15,14,13,1) 76%),url(background3.webp); */
+  
 background: rgb(255,255,255);
 background: linear-gradient(180deg, rgba(255,255,255,0) 62%, rgba(15,14,13,1) 100%),url(background3.webp);
 
@@ -86,29 +80,12 @@ button{
 
 }
 /* page 2 */
-#title{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    position: absolute;
-    left: 85vh;
-    top: 900px;
-    font-size: 40px;
-    margin-top:-20vh;
-}
 
 .container2{
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('page2.avif'); */
-    /* background-image: url(background\ for\ page\ 2.avif); */
     background-size: cover;
-    /* background-color:#e4d1b9; */
-    /* background: linear-gradient(90deg, hsla(23, 41%, 9%, 1) 0%, hsla(230, 54%, 31%, 1) 100%); */
-    /* background: linear-gradient(180deg, hsla(23, 41%, 9%, 1) 0%, hsla(230, 54%, 31%, 1) 59%); */
-    /* margin-top: 150px; */
+
     background: linear-gradient(180deg, hsla(23, 41%, 9%, 1) 0%, hsla(230, 54%, 31%, 1) 100%);
-   , 31%, 1 100%); 
+  
 
     width: 100%;
     height: 100%;
@@ -119,57 +96,85 @@ button{
     grid-template-columns: repeat(4,2fr);
     
 }
+#title{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: absolute;
+    left: 85vh;
+    top: 900px;
+    font-size: 40px;
+    margin-top:-15vh;
+
+
+}
 .card{
     width: 250px;
-    
     height: 350px;
-    
-    
     float: left;
     border-radius: 10px;
     padding: 15px 25px;
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px 15px;
-
     background-position: center;
     background-size: cover;
-    
     margin: 50px;
     color: #fff;
 }
 
 .card:hover{
     transform: rotateY(180deg);
-    
-  
-
 }
 .one,.two,.three,.four,.five,.six,.seven,.eight{
     transform-style:preserve-3d ;
     transition: all 0.8s ease;
 }
 .one{
-    background-image: url(fort\ night.webp);
-    
-    
+    background-image: url(fort\ night.webp);   
 }
+
+.front,
+.back p{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-block-end: 20px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d; /* Preserve the 3D space for children */
+  transition: transform 0.5s; /* Adds a smooth transition effect */
+  
+}
+
 .front{
-    position: absolute;
+    /* position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
-   
+    backface-visibility: hidden;   */
+    transform-style: preserve-3d; /* Preserve the 3D space for children */
+    z-index: 2;
     
 }
-.back{
-    position: absolute;
-    width: 100%;
+
+.back {
+    /* position: absolute;
+    
     height: 100%;
-    backface-visibility: hidden;
-    transform: rotateY;
+     backface-visibility: hidden;
+    transform: rotateY; */
+    transform: rotateY(180deg); /* Flips the back face initially */
+    transform-style: preserve-3d; /* Preserve the 3D space for children */
+     display: flex;
+     position: relative;
+     
    
 }
+.back p {
+    
+    word-wrap: break-word; /* Wrap long words if needed */
+  }
 .one h5{
 color: #fff;
 }
