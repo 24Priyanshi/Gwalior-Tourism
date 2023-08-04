@@ -214,3 +214,58 @@ color: #fff;
     font-style: italic;
     font-weight: 300;
 }
+/* page3 */
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+
+}
+.slide-content{
+    margin: 0 40px;
+}
+.image-content{
+    row-gap: 5px;
+}
+.overlay{
+    position: absolute;
+    
+}
+.cardq{
+    border-radius: 25px;
+    background-color: white;
+    width: 320px;
+}
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   border-radius: 50%;
+}
+.body2{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
