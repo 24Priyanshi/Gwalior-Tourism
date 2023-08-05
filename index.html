@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gwalior Tourism</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="js/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.css">
 </head>
 <body>
     <div class="container">
@@ -81,12 +82,13 @@
 </div>
 <!-- page-3 -->
 <div class="body2">
-<div class="slide-container">
+<div class="slide-container swiper">
     <div class="slide-content">
-        <div class="card-wrapper">
-            <div class="cardq">
+        <div class="card-wrapper swiper-wrapper">
+            <div class="cardq swiper-slide">
                 <div class="image-content">
                     <div class="card-image">
+                        <span class="overlay"></span>
                         <img src="fort night.webp" alt="" class="card-img">
                     </div>
                 </div>
@@ -97,7 +99,12 @@
             </div>
         </div>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
 </div>
 </div>
+<script src="js/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

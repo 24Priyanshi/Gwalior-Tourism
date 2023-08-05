@@ -229,10 +229,17 @@ color: #fff;
 }
 .image-content{
     row-gap: 5px;
+    position: relative;
+    
 }
 .overlay{
     position: absolute;
-    
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#ad5252;
+    border-radius: 25px 25px 0 25px;
 }
 .cardq{
     border-radius: 25px;
@@ -258,6 +265,16 @@ color: #fff;
     justify-content: center;
     background-color: #efefef;
 
+}
+.slide-container{
+    max-width:1120px ;
+    width: 100%;
+    background-color: grey;
+    padding: 40px;
+    
+}
+.slide-content{
+    margin: 0 40px;
 }
 .name{
     font-size: 18px;

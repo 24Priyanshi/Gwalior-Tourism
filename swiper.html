@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #151313;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* .swiper {
+      width: 100%;
+      height: 100%;
+    } */
+
+    /* .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 500px;
+      margin: 20px;
+    }
+
+    .append-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .card{
+        margin: 5px;
+        padding:10px ;
+    }
+    .swiper-wrapper{
+        display: flex; /* Optional: To align cards horizontally */
+        justify-content: space-between;
+    }
+
+
+
+    /*CARD*/
+
+
+
+    .card{
+    width: 250px;
+    height: 350px;
+    float: left;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    margin: 50px;
+    color: #fff;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight{
+    transform-style:preserve-3d ;
+    transition: all 0.8s ease;
+}
+.one{
+    background-image: url(fort\ night.webp);   
+}
+
+.front,
+.back p{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-block-end: 20px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d; /* Preserve the 3D space for children */
+  transition: transform 0.5s; /* Adds a smooth transition effect */
+  
+}
+
+.front{
+    /* position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;   */
+    transform-style: preserve-3d; /* Preserve the 3D space for children */
+    z-index: 2;
+    
+}
+
+.back {
+    /* position: absolute;
+    
+    height: 100%;
+     backface-visibility: hidden;
+    transform: rotateY; */
+    transform: rotateY(180deg); /* Flips the back face initially */
+    transform-style: preserve-3d; /* Preserve the 3D space for children */
+     display: flex;
+     position: relative;
+     
+   
+}
+.back p {
+    
+    word-wrap: break-word; /* Wrap long words if needed */
+  }
+.one h5{
+color: #fff;
+}
+.two{
+    background-image: url(jaivilas\ palace.jpg);
+}
+.three{
+    background-image: url(sun-temple3.jpg);
+    color: #ad5252;
+}
+.four{
+    background-image: url(Gopachal_\(4\).jpg);
+    background-size: cover;
+}
+.five{
+    background-image:url(teli\ mandir.jpg)
+}
+.six{
+    background-image:url(moti\ mahal.jpg);
+    background-size: cover;
+}
+.seven{
+    background-image:url(Sun\ temple.webp)
+}
+.eight{
+    background-image:url(gujari-mahal.jpg);
+    color:brown;
+}
+.home-demo .item {
+    background: #ff3f4d;
+}
+.home-demo h2 {
+    color: #FFF;
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+}
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+
+  <div #swiperRef="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <div class="flip-card">
+        <div class="card one">
+            <div class="front"><h3>Gwalior Fort</h5></div>
+          <div class="back"><p> </p></div>
+        </div>
+      </div></div>
+      <div class="swiper-slide"> <div class="flip-card">
+        <div class="card two">
+            <div class="front"><h3>Jaivilas Palaces</h3></div>
+            <div class="back"></div>
+           
+        </div>
+    </div></div>
+      <div class="swiper-slide"><div class="card three">
+        <div class="front"><h3>Jaivilas Palaces</h3></div>
+       <div class="back"></div>
+    </div></div>
+      <div class="swiper-slide"><div class="card four">
+        <div class="front"><h3>Gopachal Parvat</h3></div>
+        <div class="back"></div>
+        
+     </div></div>
+      <div class="swiper-slide"> <div class="card five">
+        <div class="front"><h3>SunTemple</h3></div>
+        <div class="back"></div>
+       
+    </div></div>
+      <div class="swiper-slide"><div class="card six">
+        
+        <div class="front"><h3>Moti Mahal</h3></div>
+        <div class="back"></div>
+       
+    </div></div>
+      <div class="swiper-slide"><div class="card seven">
+       
+        <div class="front"> <h3>Sas Bahu Mandir</h3></div>
+        <div class="back"></div>
+       
+    </div></div>
+      <div class="swiper-slide"> <div class="card eight">
+       
+        <div class="front"> <h3>Gujari Mahal</h3></div>
+        <div class="back"></div>
+       
+    </div></div>
+    
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+ 
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var appendNumber = 4;
+    var prependNumber = 1;
+    document
+      .querySelector(".prepend-2-slides")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.prependSlide([
+          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+        ]);
+      });
+    document
+      .querySelector(".prepend-slide")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.prependSlide(
+          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+        );
+      });
+    document
+      .querySelector(".append-slide")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.appendSlide(
+          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+        );
+      });
+    document
+      .querySelector(".append-2-slides")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.appendSlide([
+          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+        ]);
+      });
+  </script>
+</body>
+
+</html>
