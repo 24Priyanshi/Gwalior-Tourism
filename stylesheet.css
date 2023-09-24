@@ -84,7 +84,7 @@ button{
 .container2{
     background-size: cover;
 
-    background: linear-gradient(180deg, hsla(23, 41%, 9%, 1) 0%, hsla(230, 54%, 31%, 1) 100%);
+    background: linear-gradient(180deg, rgb(103, 88, 79) 0%, hsla(230, 54%, 31%, 1) 100%);
   
 
     width: 100%;
