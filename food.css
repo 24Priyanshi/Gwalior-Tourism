@@ -1,9 +1,9 @@
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
     font-family:'roboo',sans-serif;
-    background-color:black;
+    background-color:rgb(233, 223, 223);
     
 }
 .container{

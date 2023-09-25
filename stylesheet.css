@@ -35,7 +35,7 @@ nav ul li a{
   
 background: rgb(255,255,255);
 background: linear-gradient(180deg, rgba(255,255,255,0) 62%, rgba(15,14,13,1) 100%),url(background3.webp);
-
+    background-image: url('background3.webp');
     background-position: center;
     background-size: cover;
     padding-left: 8%;
@@ -54,8 +54,6 @@ background: linear-gradient(180deg, rgba(255,255,255,0) 62%, rgba(15,14,13,1) 10
 .col
 {
     flex-basis: 50%;
-    /* margin-bottom: 20%;
-    margin-left: 22%; */
 }
 h1
 {

@@ -51,29 +51,29 @@
       position: relative;
       height: 100%;
     }
+    .pg2bg{
+      background-image: url(pg2bg.jpg);
+      width: 100%;
+      height: 20rem;
+    }
+    .content .text{
+      text-align: center;
+      font-size:30px;
+      font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
     body {
-      background: #0e0e0e;
+      background: #ffffff;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
-      color: #000;
+      color: #2d2525;
       margin: 0;
       padding: 0;
     }
-
-    /* .swiper {
-      width: 100%;
-      height: 100%;
-    } */
-
-    /* .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } */
 
     .swiper-slide img {
       display: block;
@@ -120,6 +120,7 @@
     background-size: cover;
     margin: 50px;
     color: #fff;
+    border: 5px solid #06060668;
 }
 
 .card:hover{
@@ -218,8 +219,13 @@ color: #fff;
 
 <body>
   <!-- Swiper -->
-
-  <h2>Places to visit in Gwalior</h2>
+  <div class="pg2bg">
+    <div class="content">
+      <div class="text">
+        Landscapes that will take your breath away, rich history, and delicious food, your trip to Gwalior will be nothing short of unforgettable.
+      </div>
+    </div>
+  </div>
 
   <div #swiperRef="" class="swiper mySwiper" >
     <div class="swiper-wrapper">
