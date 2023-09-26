@@ -56,18 +56,43 @@
       width: 100%;
       height: 20rem;
     }
-    .content .text{
-      text-align: center;
-      font-size:30px;
-      font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    .content {
+      width: 100%;
+      font-size:35px;
+      font-weight: 500;
+      font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans";
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 1px;
+    line-height: 50px;
     }
+    .text{
+      width: 70%;
+      text-align: center;
+      position: relative;
+      top: 63px;
 
+    }
+    .siteswalatext p{
+    margin-top: 100px;
+    color: rgb(105, 102, 102);
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    #sites{
+      color: #2d2525;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 10px;
+
+    }
     body {
-      background: #ffffff;
+      background: #f0f0f0;;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color: #2d2525;
@@ -120,7 +145,7 @@
     background-size: cover;
     margin: 50px;
     color: #fff;
-    border: 5px solid #06060668;
+    /* border: 5px solid #06060668; */
 }
 
 .card:hover{
@@ -141,37 +166,22 @@
   position: absolute;
   margin-block-end: 20px;
   backface-visibility: hidden;
-  transform-style: preserve-3d; /* Preserve the 3D space for children */
-  transition: transform 0.5s; /* Adds a smooth transition effect */
-  
+  transform-style: preserve-3d; 
+  transition: transform 0.5s; 
 }
 
 .front{
-    /* position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;   */
-    transform-style: preserve-3d; /* Preserve the 3D space for children */
-    z-index: 2;
-    
+  transform-style: preserve-3d; 
+  z-index: 2;
 }
 
 .back {
-    /* position: absolute;
-    
-    height: 100%;
-     backface-visibility: hidden;
-    transform: rotateY; */
-    transform: rotateY(180deg); /* Flips the back face initially */
-    transform-style: preserve-3d; /* Preserve the 3D space for children */
-     display: flex;
-     position: relative;
-     
-   
+  transform-style: preserve-3d; 
+  display: flex;
+  position: relative;
 }
-.back p {
-    
-    word-wrap: break-word; /* Wrap long words if needed */
+.back p {  
+  word-wrap: break-word; 
   }
 .one h5{
 color: #fff;
@@ -225,6 +235,10 @@ color: #fff;
         Landscapes that will take your breath away, rich history, and delicious food, your trip to Gwalior will be nothing short of unforgettable.
       </div>
     </div>
+  </div>
+  <div class="siteswalatext">
+      <p >DESTINATIONS</p>
+      <p id="sites">Unmissable Sites</p>
   </div>
 
   <div #swiperRef="" class="swiper mySwiper" >
