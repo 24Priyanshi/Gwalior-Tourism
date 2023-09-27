@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Information Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .image {
+            flex: 1;
+            order: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .information {
+            flex: 1;
+            order: 2;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .image:nth-child(odd) {
+            order: 2;
+        }
+
+        .information:nth-child(odd) {
+            order: 1;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="information">
+            <h2>Image 1 Information</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec nisi ac justo feugiat euismod.</p>
+        </div>
+        <div class="image">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="information">
+            <h2>Image 2 Information</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec nisi ac justo feugiat euismod.</p>
+        </div>
+        <!-- Repeat the pattern for additional images and information -->
+    </div>
+</body>
+</html>
