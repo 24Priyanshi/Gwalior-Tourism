@@ -275,3 +275,221 @@ color: #fff;
     color: #707070;
     text-align: center;
 }
+/* page2 */
+
+.page2 html,
+body {
+  position: relative;
+  height: 100%;
+}
+.page2 .pg2bg{
+  background-image: url(pg2bg.jpg);
+  width: 100%;
+  height: 20rem;
+}
+.page2 .content {
+  width: 100%;
+  font-size:35px;
+  font-weight: 500;
+  font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans";
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 1px;
+line-height: 50px;
+}
+.page2 .text{
+  width: 70%;
+  text-align: center;
+  position: relative;
+  top: 63px;
+
+}
+.page2 .siteswalatext p{
+margin-top: 100px;
+color: rgb(105, 102, 102);
+font-size: 18px;
+letter-spacing: .5px;
+line-height: 32px;
+text-transform: uppercase;
+text-align: center;
+}
+.page2 #sites{
+  color: #2d2525;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+
+}
+.page2 body {
+  background: #f0f0f0;;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #2d2525;
+  margin: 0;
+  padding: 0;
+}
+
+.page2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page2 .swiper {
+  width: 100%;
+  height: 500px;
+  margin: 20px;
+}
+
+.page2 .append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.page2 .card{
+    margin: 5px;
+    padding:10px ;
+}
+.page2 .swiper-wrapper{
+    display: flex; /* Optional: To align cards horizontally */
+    justify-content: space-between;
+}
+
+
+
+/*CARD*/
+
+
+
+.page2 .card{
+width: 250px;
+height: 350px;
+float: left;
+border-radius: 10px;
+padding: 15px 25px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-position: center;
+background-size: cover;
+margin: 50px;
+color: #fff;
+/* border: 5px solid #06060668; */
+}
+
+.page2 .card:hover{
+transform: rotateY(180deg);
+}
+.page2 .one,.two,.three,.four,.five,.six,.seven,.eight{
+transform-style:preserve-3d ;
+transition: all 0.8s ease;
+}
+.page2 .one{
+background-image: url(fort\ night.webp);   
+}
+
+.page2 .front,
+.back p{
+width: 100%;
+height: 100%;
+position: absolute;
+margin-block-end: 20px;
+backface-visibility: hidden;
+transform-style: preserve-3d; 
+transition: transform 0.5s; 
+}
+
+.page2 .front{
+transform-style: preserve-3d; 
+z-index: 2;
+}
+
+.page2 .back {
+transform-style: preserve-3d; 
+display: flex;
+position: relative;
+}
+.page2 .back p {  
+word-wrap: break-word; 
+}
+.page2 .one h5{
+color: #fff;
+}
+.page2 .two{
+background-image: url(jaivilas\ palace.jpg);
+}
+.page2 .three{
+background-image: url(sun-temple3.jpg);
+color: #ad5252;
+}
+.page2 .four{
+background-image: url(Gopachal_\(4\).jpg);
+background-size: cover;
+}
+.page2 .five{
+background-image:url(teli\ mandir.jpg)
+}
+.page2 .six{
+background-image:url(moti\ mahal.jpg);
+background-size: cover;
+}
+.page2 .seven{
+background-image:url(Sun\ temple.webp)
+}
+.page2 .eight{
+background-image:url(gujari-mahal.jpg);
+color:brown;
+}
+.page2 .home-demo .item {
+background: #ff3f4d;
+}
+.page2 .home-demo h2 {
+color: #FFF;
+text-align: center;
+padding: 5rem 0;
+margin: 0;
+font-style: italic;
+font-weight: 300;
+}
+
+/* page-3 */
+.page3{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'roboo',sans-serif;
+    box-sizing: border-box;
+}
+.page3 body{
+    background-color: #f0f0f0;
+}
+.page3 .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    flex-direction: row;
+}
+.page3 .card{
+    width: 350px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.page3 .card img{
+    width: 100%;
+    height: auto;
+    width: 350px;
+    height: 250px;
+}
+.page3 .card-content{
+    padding:16px;
+}
+.page3 .card-content h3{
+    font-size: 28px;
+    margin-bottom: 28px;
+}
