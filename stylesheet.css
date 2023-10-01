@@ -465,14 +465,14 @@ font-weight: 300;
 .page3 body{
     background-color: #f0f0f0;
 }
-.page3 .card-container{
+.page3 .card-container2{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
     flex-direction: row;
 }
-.page3 .card{
+.page3 .card2{
     width: 350px;
     background-color: #f0f0f0;
     border-radius: 8px;
@@ -480,16 +480,50 @@ font-weight: 300;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
     margin: 20px;
 }
-.page3 .card img{
+.page3 .card2 img{
     width: 100%;
     height: auto;
     width: 350px;
     height: 250px;
 }
-.page3 .card-content{
+.page3 .card-content2{
     padding:16px;
 }
-.page3 .card-content h3{
-    font-size: 28px;
-    margin-bottom: 28px;
+.page3 .card-content2 h3{
+    font-size: 16px;
+    margin-bottom: -2px;
+    text-align: center;
+    font-style: italic;
+}
+.page3 .foodwalatext p{
+    margin-top: 100px;
+    color: rgb(105, 102, 102);
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    .page3 #Food{
+      color: #2d2525;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 10px;
+    
+    }
+    /* page4 */
+
+.page4 .box1{
+    margin: 7rem;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    display: flex;
+}
+.page4 img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
 }
