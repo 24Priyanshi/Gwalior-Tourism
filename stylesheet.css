@@ -526,4 +526,17 @@ font-weight: 300;
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
+    box-shadow: 4px 4px 4px 4px rgba(0.2,0.2,0.2,0.2);
+    padding: 1rem;
+}
+.page4 .box1 .text h3{
+    font-size: larger;
+    padding: 2rem;
+    text-align: center;
+}
+.page4 .box1 .text p{
+    padding: 7px;
+}
+p{
+    color: #000;
 }
